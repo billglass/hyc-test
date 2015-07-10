@@ -10,10 +10,12 @@ Rails.application.routes.draw do
 
   get '/about', to: 'pages#about'
   get '/gallery', to: 'pages#gallery'
+  post '/gallery', to: 'pages#gallery'
   get '/blog', to:  'posts#index'
   get '/newpost', to: 'posts#new'
   get '/contact', to: 'pages#contact'
   get '/posts/:id/edit', to: 'posts#edit', as: 'edit'
+
     
   delete '/posts/:id', to: 'posts#destroy', as: 'destroy', method: :delete
   

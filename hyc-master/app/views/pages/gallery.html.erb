@@ -1,2 +1,9 @@
 <h1>Pages#gallery</h1>
-<p>Find me in app/views/pages/gallery.html.erb</p>
+<p>
+	<%= form_for gallery_path do |form| %>
+  <%= form.file_field :avatar %>
+  <%= form.submit %>
+<% end %>
+</p>
+
+
